@@ -1,0 +1,386 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x1504D5FB1E25CDF",
+      "design_src": "SYSGEN",
+      "device": "xcvu37p-fsvh2892-2L-e",
+      "gen_directory": "../../../../xil_ssr_8in.gen/sources_1/bd/xil_ssr_8in_bd",
+      "name": "xil_ssr_8in_bd",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2021.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "xil_ssr_8in_1": ""
+    },
+    "ports": {
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "xil_ssr_8in_bd_clk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "in0": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "in1": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "in2": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "in3": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "in4": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "in5": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "in6": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "in7": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "op_scale_o": {
+        "type": "data",
+        "direction": "O",
+        "left": "9",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 10} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}",
+            "value_src": "const_prop"
+          }
+        }
+      },
+      "op_valid_o": {
+        "type": "data",
+        "direction": "O",
+        "left": "0",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}",
+            "value_src": "const_prop"
+          }
+        }
+      },
+      "out0": {
+        "type": "data",
+        "direction": "O",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 18} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 17} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}}}}",
+            "value_src": "const_prop"
+          }
+        }
+      },
+      "out1": {
+        "type": "data",
+        "direction": "O",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 18} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 17} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}}}}",
+            "value_src": "const_prop"
+          }
+        }
+      },
+      "out2": {
+        "type": "data",
+        "direction": "O",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 18} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 17} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}}}}",
+            "value_src": "const_prop"
+          }
+        }
+      },
+      "out3": {
+        "type": "data",
+        "direction": "O",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 18} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 17} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}}}}",
+            "value_src": "const_prop"
+          }
+        }
+      },
+      "out4": {
+        "type": "data",
+        "direction": "O",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 18} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 17} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}}}}",
+            "value_src": "const_prop"
+          }
+        }
+      },
+      "out5": {
+        "type": "data",
+        "direction": "O",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 18} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 17} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}}}}",
+            "value_src": "const_prop"
+          }
+        }
+      },
+      "out6": {
+        "type": "data",
+        "direction": "O",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 18} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 17} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}}}}",
+            "value_src": "const_prop"
+          }
+        }
+      },
+      "out7": {
+        "type": "data",
+        "direction": "O",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 18} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 17} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}}}}",
+            "value_src": "const_prop"
+          }
+        }
+      }
+    },
+    "components": {
+      "xil_ssr_8in_1": {
+        "vlnv": "User_Company:SysGen:xil_ssr_8in:1.0",
+        "xci_name": "xil_ssr_8in_bd_xil_ssr_8in_1_0",
+        "xci_path": "ip/xil_ssr_8in_bd_xil_ssr_8in_1_0/xil_ssr_8in_bd_xil_ssr_8in_1_0.xci",
+        "inst_hier_path": "xil_ssr_8in_1"
+      }
+    },
+    "nets": {
+      "clk_1": {
+        "ports": [
+          "clk",
+          "xil_ssr_8in_1/clk"
+        ]
+      },
+      "in0_1": {
+        "ports": [
+          "in0",
+          "xil_ssr_8in_1/in0"
+        ]
+      },
+      "in1_1": {
+        "ports": [
+          "in1",
+          "xil_ssr_8in_1/in1"
+        ]
+      },
+      "in2_1": {
+        "ports": [
+          "in2",
+          "xil_ssr_8in_1/in2"
+        ]
+      },
+      "in3_1": {
+        "ports": [
+          "in3",
+          "xil_ssr_8in_1/in3"
+        ]
+      },
+      "in4_1": {
+        "ports": [
+          "in4",
+          "xil_ssr_8in_1/in4"
+        ]
+      },
+      "in5_1": {
+        "ports": [
+          "in5",
+          "xil_ssr_8in_1/in5"
+        ]
+      },
+      "in6_1": {
+        "ports": [
+          "in6",
+          "xil_ssr_8in_1/in6"
+        ]
+      },
+      "in7_1": {
+        "ports": [
+          "in7",
+          "xil_ssr_8in_1/in7"
+        ]
+      },
+      "xil_ssr_8in_1_op_scale_o": {
+        "ports": [
+          "xil_ssr_8in_1/op_scale_o",
+          "op_scale_o"
+        ]
+      },
+      "xil_ssr_8in_1_op_valid_o": {
+        "ports": [
+          "xil_ssr_8in_1/op_valid_o",
+          "op_valid_o"
+        ]
+      },
+      "xil_ssr_8in_1_out0": {
+        "ports": [
+          "xil_ssr_8in_1/out0",
+          "out0"
+        ]
+      },
+      "xil_ssr_8in_1_out1": {
+        "ports": [
+          "xil_ssr_8in_1/out1",
+          "out1"
+        ]
+      },
+      "xil_ssr_8in_1_out2": {
+        "ports": [
+          "xil_ssr_8in_1/out2",
+          "out2"
+        ]
+      },
+      "xil_ssr_8in_1_out3": {
+        "ports": [
+          "xil_ssr_8in_1/out3",
+          "out3"
+        ]
+      },
+      "xil_ssr_8in_1_out4": {
+        "ports": [
+          "xil_ssr_8in_1/out4",
+          "out4"
+        ]
+      },
+      "xil_ssr_8in_1_out5": {
+        "ports": [
+          "xil_ssr_8in_1/out5",
+          "out5"
+        ]
+      },
+      "xil_ssr_8in_1_out6": {
+        "ports": [
+          "xil_ssr_8in_1/out6",
+          "out6"
+        ]
+      },
+      "xil_ssr_8in_1_out7": {
+        "ports": [
+          "xil_ssr_8in_1/out7",
+          "out7"
+        ]
+      }
+    }
+  }
+}
