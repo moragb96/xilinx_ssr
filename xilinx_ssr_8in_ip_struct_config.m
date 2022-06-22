@@ -86,19 +86,26 @@ function xil_ssr_8in_ip_struct_config(this_block)
 
   % System Generator found no apparent clock signals in the HDL, assuming combinational logic.
   % -----------------------------
-   if (this_block.inputRatesKnown)
-     inputRates = this_block.inputRates; 
-     uniqueInputRates = unique(inputRates); 
-     outputRate = uniqueInputRates(1);
-     for i = 2:length(uniqueInputRates)
-       if (uniqueInputRates(i) ~= Inf)
-         outputRate = gcd(outputRate,uniqueInputRates(i));
-       end
-     end  % for(i)
-     for i = 1:this_block.numSimulinkOutports 
-       this_block.outport(i).setRate(outputRate); 
-     end  % for(i)
-   end  % if(inputRatesKnown)
+
+  if (this_block.inputRatesKnown)
+     setup_as_single_rate(this_block,'clk_1','ce_1')
+  end  % if(inputRatesKnown)
+  % -----------------------------
+
+
+%   if (this_block.inputRatesKnown)
+%     inputRates = this_block.inputRates; 
+%     uniqueInputRates = unique(inputRates); 
+%     outputRate = uniqueInputRates(1);
+%     for i = 2:length(uniqueInputRates)
+%       if (uniqueInputRates(i) ~= Inf)
+%         outputRate = gcd(outputRate,uniqueInputRates(i));
+%       end
+%     end  % for(i)
+%     for i = 1:this_block.numSimulinkOutports 
+%       this_block.outport(i).setRate(outputRate); 
+%     end  % for(i)
+%   end  % if(inputRatesKnown)
   % -----------------------------
 
     uniqueInputRates = unique(this_block.getInputRates);
@@ -121,4 +128,27 @@ function xil_ssr_8in_ip_struct_config(this_block)
 
 return;
 
+function setup_as_single_rate(block,clkname,cename)
+  inputRates = block.inputRates;
+  uniqueInputRates = unique(inputRates);
+  if (length(uniqueInputRates)==1 & uniqueInputRates(1)==Inf)
+    block.addError('The inputs to this block cannot all be constant.');
+    return;
+  end
+  if (uniqueInputRates(end) == Inf)
+     hasConstantInput = true;
+     uniqueInputRates = uniqueInputRates(1:end-1);
+  end
+
+
+ if (length(uniqueInputRates) ~= 1)
+    block.addError('The inputs to this block must run at a single rate.');
+    return;
+  end
+  theInputRate = uniqueInputRates(1);
+  for i = 1:block.numSimulinkOutports
+     block.outport(i).setRate(theInputRate);
+  end
+  block.addClkCEPair(clkname,cename,theInputRate);
+  return;
 

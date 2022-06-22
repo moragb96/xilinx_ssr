@@ -12,7 +12,8 @@ entity xil_ssr_8in_ip_struct is
     in5 : in std_logic_vector( 18-1 downto 0 );
     in6 : in std_logic_vector( 18-1 downto 0 );
     in7 : in std_logic_vector( 18-1 downto 0 );
-    clk : in std_logic;
+    clk_1 : in std_logic;
+    ce_1 : in std_logic; 
     op_valid_o : out std_logic_vector( 1-1 downto 0 );
     op_scale_o : out std_logic_vector( 10-1 downto 0 );
     out0 : out std_logic_vector( 18-1 downto 0 );
@@ -60,7 +61,7 @@ begin
     in5 => in5,
     in6 => in6,
     in7 => in7,
-    clk => clk,
+    clk => clk_1,
     op_valid_o => op_valid_o,
     op_scale_o => op_scale_o,
     out0 => out0,
